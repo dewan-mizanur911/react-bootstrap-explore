@@ -8,7 +8,7 @@ const News = () => {
     const [searched, setSearched] = useState([]);
     useEffect(() => {
         fetch(
-          "https://newsapi.org/v2/everything?q=Apple&from=2021-09-28&sortBy=popularity&apiKey=46756fd7c9e44826b8d990775d4b8eca"
+          "./data.JSON"
         )
           .then((res) => res.json())
             .then((data) => {
